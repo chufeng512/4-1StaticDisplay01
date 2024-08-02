@@ -1,0 +1,45 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              08/02/2024 15:03:20 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: E:\Keil5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main.l
+                    -st) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <STC89C5xRC.H>
+   2          //增加自定义类型，简化代码编写
+   3          typedef unsigned char u8;
+   4          typedef unsigned int u16;
+   5          //需求：静态数码管显示,让第四个数码管显示6
+   6          //手册信息：DIG5对应Y4,P15 P14 P13 1 0 0
+   7          
+   8          void main()
+   9          {
+  10   1        P15 = 1;
+  11   1        P14 = 0;
+  12   1        P13 = 0;
+  13   1        
+  14   1        P0 = 0x6D;
+  15   1        
+  16   1        while(1)
+  17   1        {
+  18   2          
+  19   2        }
+  20   1      }
+  21          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     11    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
